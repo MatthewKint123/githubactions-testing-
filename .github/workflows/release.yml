@@ -1,17 +1,9 @@
 name: auto deploy release
 
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: Environment.
-        required: true
-        default: ftbtest
-      branch:
-        description: Branch.
-        required: true
-        default: env/ftbtest
-
+  push:
+    branches:
+      - 'env/ftbtest'
 
 jobs:
  create-new-release:
