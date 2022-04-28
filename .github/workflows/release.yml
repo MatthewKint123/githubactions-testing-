@@ -19,6 +19,8 @@ jobs:
    steps:
     - name: Checkout ftbtest
       uses: actions/checkout@v2
+      with:
+        ref: env/fbtest
     - name: delete tag and release
       uses: dev-drprasad/delete-tag-and-release@v0.2.0
       with:
@@ -36,7 +38,8 @@ jobs:
         release_name: ftbtest
         body: |
           Changes in this Release
-          - First Change
+          - manifest added to tag
+        target_commitish: env/ftbtest
         draft: false
         prerelease: false
 
