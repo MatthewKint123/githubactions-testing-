@@ -20,7 +20,7 @@ jobs:
     - name: Checkout ftbtest
       uses: actions/checkout@v2
       with:
-        ref: env/fbtest
+        ref: env/ftbtest
     - name: delete tag and release
       uses: dev-drprasad/delete-tag-and-release@v0.2.0
       with:
