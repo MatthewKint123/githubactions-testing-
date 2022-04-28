@@ -36,7 +36,6 @@ jobs:
       with:
         tag_name: ftbtest
         release_name: ftbtest
-        target_commitish: env/ftbest
         draft: false
         prerelease: false
 
