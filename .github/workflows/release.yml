@@ -34,8 +34,12 @@ jobs:
       with:
         tag_name: ftbtest
         release_name: ftbtest
+        body: |
+          Changes in this Release
+          - First Change
         draft: false
         prerelease: false
+
 
 
 
