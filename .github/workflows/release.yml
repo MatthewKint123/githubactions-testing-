@@ -14,7 +14,7 @@ on:
 
 
 jobs:
- create new release:
+ create-new-release:
    runs-on: ubuntu-latest
    steps:
     - name: Checkout ftbtest
