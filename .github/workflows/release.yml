@@ -28,20 +28,7 @@ jobs:
         tag_name: ftbtest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Create Release
-      id: create_release
-      uses:  actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ftbtest
-        release_name: ftbtest
-        body: |
-          Changes in this Release
-          - manifest added to tag
-        target_commitish: env/ftbtest
-        draft: false
-        prerelease: false
+
 
 
 
