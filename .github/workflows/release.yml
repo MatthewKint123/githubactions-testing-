@@ -19,7 +19,6 @@ jobs:
    steps:
     - name: Checkout ftbtest
       uses: actions/checkout@v2
-      with:
     - name: delete tag and release
       uses: dev-drprasad/delete-tag-and-release@v0.2.0
       with:
