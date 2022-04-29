@@ -3,7 +3,9 @@ name: auto deploy release
 on:
   push:
     branches:
-      - 'main'
+      - 'env/ftbtest'
+    paths:
+      - 'banking/manifest.yml'
 
 
 jobs:
@@ -32,6 +34,6 @@ jobs:
         commitish: env/ftbtest
         body: |
           Changes in this Release
-          - push to main
+          - push to ftbtest
         draft: false
         prerelease: false
