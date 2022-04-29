@@ -34,6 +34,6 @@ jobs:
         commitish: env/ftbtest
         body: |
           Changes in this Release
-          - push to ftbtest
+          - merge push
         draft: false
         prerelease: false
