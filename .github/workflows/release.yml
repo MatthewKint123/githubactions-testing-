@@ -35,9 +35,3 @@ jobs:
           - manifest on push tag
         draft: false
         prerelease: false
-
-
-
-
-
-
