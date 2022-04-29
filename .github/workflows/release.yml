@@ -1,17 +1,13 @@
 name: auto deploy release
 
 on:
-  pull_request_target:
-    types:
-      - closed
-    branches:
-      - 'env/ftbtest'
+  push:
+
 
 jobs:
-  create-new-release:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
+ create-new-release:
+   runs-on: ubuntu-latest
+   steps:
     - name: Checkout ftbtest
       uses: actions/checkout@v2
       with:
