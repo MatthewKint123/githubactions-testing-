@@ -2,6 +2,8 @@ name: auto deploy release
 
 on:
   push:
+    branch:
+      - 'main'
 
 
 jobs:
