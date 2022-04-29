@@ -1,0 +1,14 @@
+version: 4.11.16-HF1
+client: ftb
+description: FTB specific build of the D3 platform
+components:
+- name: d3-account-api-banking
+  group: com.d3banking.core.ms
+  description: Banking Account services API
+  version: 4.13.00
+  type: jar
+  repository: nexus
+  src-repositories:
+  - d3-account
+  stacks:
+  - banking
