@@ -32,6 +32,6 @@ jobs:
         commitish: env/ftbtest
         body: |
           Changes in this Release
-          - manifest on push tag
+          - push to main
         draft: false
         prerelease: false
