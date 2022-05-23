@@ -9,6 +9,6 @@ components:
   type: jar
   repository: nexus
   src-repositories:
-  - d3-account
+  - d3-taging
   stacks:
   - banking

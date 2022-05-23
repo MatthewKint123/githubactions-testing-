@@ -1,0 +1,17 @@
+name: exporter
+
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: Environment
+        required: true
+        default: ftbtest
+
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: export script
+        run: |
+          url -X PUT https://conduit-ftbint2.d3hosted.com:/v4/conduit-config/export -H "Content-Type: application/json" -d '{"types":["LOCALE", "BUNDLE", "L10N_DEFINITION"]}' -o Users/MK185417/Documents/Conduit-exports/config-conduit-l10n-definitions-int2.xml
