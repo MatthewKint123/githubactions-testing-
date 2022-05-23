@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'env/ftbtest'
+      - 'main'
     paths:
       - 'banking/manifest.yml'
 
